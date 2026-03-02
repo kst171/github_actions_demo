@@ -46,7 +46,7 @@ jobs:
           python-version: 3.11
 
       - run: pip install -r requirements-dev.txt
-      - run: pytest --junitxml=report.xml
+      - run: python3 -m pytest --junitxml=report.xml
 
       - uses: actions/upload-artifact@v4
         with:
