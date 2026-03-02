@@ -1,4 +1,4 @@
-def add (a: int, b: int):
+def add(a: int, b: int):
     return a + b
 
 def dev(a: int, b: int) -> float:
