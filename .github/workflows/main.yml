@@ -64,7 +64,7 @@ jobs:
           python-version: 3.11
 
       - run: pip install -r requirements-dev.txt
-      - run: coverage run -m pytest
+      - run: coverage run python -m pytest
       - run: coverage xml
 
       - uses: actions/upload-artifact@v4
